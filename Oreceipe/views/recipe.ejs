@@ -1,0 +1,18 @@
+
+<% const recipeName = recipe.name.replace(/^[a-z]/, (char) => char.toUpperCase()); %>
+
+<%- include("partials/header", { title: recipeName, headerTitle: `Recette de ${recipeName}` }) %>
+
+<p>Auteur : <%= recipe.author %></p>
+
+<p>Temps de préparation : <%= recipe.preparationTime %> minutes</p>
+
+<h2>Ingredients :</h2>
+
+<ul>
+    <% recipe.ingredients.forEach(ingredient => { %>
+        <li><%= ingredient.replace(/^[a-z]/, (char) => char.toUpperCase()) %></li>
+    <% }); %>
+</ul>
+
+<%- include("partials/footer") %>

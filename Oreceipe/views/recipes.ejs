@@ -1,0 +1,14 @@
+
+<%- include("partials/header") %>
+
+<ul>
+    <% for (const recipe of recipes) { %>
+        <li>
+            <a href="/recipes/<%= recipe.name %>">
+                <%= recipe.name.replace(/^[a-z]/, (char) => char.toUpperCase()) %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+<%- include("partials/footer") %>

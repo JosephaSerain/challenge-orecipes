@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #be3838;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 15px;
+}

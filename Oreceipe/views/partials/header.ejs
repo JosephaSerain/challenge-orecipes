@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        typeof, c'est du JS natif qui permet de récupérer le type d'une variable (retourne une chaine de caractère).
+        Si on l'utilise sur une variable qui n'existe pas, ça donne la chaine "undefined".
+        La ligne ci dessous (typeof title !== "undefined"), ça veut dire : Si la variable title existe
+    -->
+    <title><%= typeof title !== "undefined" ? `${title} - ` : '' %>O'Recipes</title>
+    <link rel="stylesheet" href="/css/reboot.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>O'Recipes<%= typeof headerTitle !== "undefined" ? ` - ${headerTitle}` : '' %></h1>
+    </header>
+
+    <main>
